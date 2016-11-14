@@ -1,0 +1,16 @@
+<h1>Longest Word Game</h1>
+<p>Find me in app/views/longest_word/game.html.erb</p>
+
+<h2>Grid</h2>
+
+<div>
+  <%= session[:grid] %>
+</div>
+
+<h2>Your Answer</h2>
+
+<form action="/longest_word/score" method="get">
+  <input type="text" name="answer" placeholder="Your answer" />
+  <input type="hidden" name="start_time" value="<%= @start_time %>" />
+  <input type="submit" />
+</form>

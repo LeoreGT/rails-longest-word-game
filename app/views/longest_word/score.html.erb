@@ -1,0 +1,21 @@
+<h1>Longest Word Score</h1>
+<p>Find me in app/views/longest_word/score.html.erb</p>
+
+<h2>Grid</h2>
+
+<div>
+  <%= session[:grid] %>
+</div>
+
+<% if @error %>
+  <p><%= @error %></p>
+<% else %>
+  <h2>TOTAL TIME</h2>
+  <p><%= @time_taken %></p>
+
+  <h2>TRANSLATION</h2>
+  <p><%= @translation %></p>
+
+  <h2>SCORE</h2>
+  <p><%= @score %></p>
+<% end %>
